@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
+	
+	<title>Dynamic Page | Home</title>
+  
+  <!-- Stylesheets -->  
+  <link rel='stylesheet' type='text/css' href='css/style.css' />
+  <link rel='stylesheet' id='camera-css'  href='css/camera.css' type='text/css' media='all'>
+	
+	<!--[if IE]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Scripts -->
+    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js'></script>
+    <script type='text/javascript' src='js/jquery.ba-hashchange.min.js'></script>
+    <script type='text/javascript' src='js/dynamicpage.js'></script>
+    <script type='text/javascript' src='js/jquery.mobile.customized.min.js'></script>
+    <script type='text/javascript' src='js/jquery.easing.1.3.js'></script> 
+    <script type='text/javascript' src='js/camera.min.js'></script>
+
+
+    <script>
+		jQuery(function(){
+			
+			jQuery('#camera_wrap_1').camera({
+				thumbnails: true
+			});
+
+			jQuery('#camera_wrap_2').camera({
+				height: '400px',
+				loader: 'bar',
+				pagination: false,
+				thumbnails: true
+			});
+		});
+	</script>
+    
+</head>
+
+<body>
+
+	<div id="page-wrap">
+
+    <header>
+      <hgroup>
+      <h1>Alchemy</h1>
+      </hgroup>
+		  <nav>
+		      <ul>
+		          <li><a href="scope.html">Scope</a></li>
+		          <li><a href="research.html">Research Process</a></li>
+              <li><a href="design.html">Design Process</a></li>
+              <li><a href="solution.html">Solution</a></li>
+ 		          <li><a href="team.html">Team</a></li>
+		      </ul>
+		  </nav>
+		</header>
+		
+		<section id="main-content">
+    <div id="guts">
+
+          <h2>We were tasked with lorem ipsum</h2>
+		
+		</div>
+		</section>
+		
+	</div>
+	
+  <footer>
+  Created by Alchemy
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+*{ 
+   margin: 0; padding: 0; 
+}
+
+html { overflow-y: scroll; }
+
+header, footer, section, hgroup, nav
+{
+  display:block;
+}
+
+body { 
+  font: 12px/1.4 Helvetica, sans-serif;
+  height: 100%;
+}
+
+/* Header */
+header
+{
+  background: #ffce07;
+}
+
+/* Make footer stick to bottom of page */
+html, body, #page-wrap
+{
+  height: 100%;
+}
+
+/* Make footer stick to bottom of page */
+body > #page-wrap 
+{
+  height: auto;
+  min-height: 100%;
+}
+
+/* Page wrap */
+#page-wrap
+{ 
+    width: 100%;
+    background: white;
+}
+
+/* Headings */
+h1,h2,h3
+{
+	font-family:Helvetica,Arial,Sans-Serif;
+}
+
+h1
+{
+	/* The logo text */
+	font-size:3.5em;
+	text-transform:uppercase;
+  color: white;
+}
+
+p
+{
+	line-height:1.5em;
+	padding-bottom:1em;
+}
+
+/* Main content */
+#main-content { 
+  height: 100%;
+  width: 50%;
+  margin-left:auto;
+  margin-right:auto;
+  padding-bottom: 3em;
+}
+ 
+/* Navigation bar */
+nav
+{
+	position:absolute;
+  top: 1.5em;
+  right:0;
+}
+
+nav ul 
+{ 
+    list-style: none;
+    padding: 4px 15px;
+    width: 478px; 
+    position: relative; 
+}
+nav ul li 
+{ 
+  display: inline; 
+}
+
+
+nav ul li a {
+	display: block;
+	float: left;
+	padding: 0 10px;
+	font: 14px "Helvetica", sans-serif;
+	color: #4d4d4d;
+  text-decoration: none; 
+	margin: 0 5px 0 0;
+}
+
+/* Navigation bar on hover underline */
+nav ul li a:hover 
+{
+  border-bottom: 2px solid;
+}	
+
+/* Navigation bar on selected underline */
+nav ul li a:active, nav ul li a.current 
+{
+  border-bottom: 2px solid;
+}
+
+
+/* Footer */
+footer 
+{ 
+  background: #8b8b8b;  
+  width: 100%; 
+  clear: both;
+  position: relative;
+  z-index: 10;
+  height: 3em;
+  margin-top: -3em;
+}
