@@ -54,6 +54,12 @@ h1
   color: white;
 }
 
+h2
+{
+  color: #00587a;
+  padding-bottom: 20px;
+}
+
 p
 {
 	line-height:1.5em;
@@ -62,8 +68,7 @@ p
 
 /* Main content */
 #main-content { 
-  height: 100%;
-  width: 50%;
+  width: 60%;
   margin-left:auto;
   margin-right:auto;
   padding-bottom: 3em;
@@ -94,7 +99,7 @@ nav ul li a {
 	display: block;
 	float: left;
 	padding: 0 10px;
-	font: 14px "Helvetica", sans-serif;
+	font: 11px "Helvetica", sans-serif;
 	color: #4d4d4d;
   text-decoration: none; 
 	margin: 0 5px 0 0;
@@ -103,15 +108,60 @@ nav ul li a {
 /* Navigation bar on hover underline */
 nav ul li a:hover 
 {
-  border-bottom: 2px solid;
+  text-decoration: underline;
 }	
 
 /* Navigation bar on selected underline */
 nav ul li a:active, nav ul li a.current 
 {
-  border-bottom: 2px solid;
+  text-decoration: underline;
 }
 
+/* Pictures */
+.holder {
+	overflow:hidden;
+	width:200px;
+	height:150px;
+	float:left;
+	position:relative;
+	background-color:#000;
+	margin-right:1px;
+}
+.holder .image {
+	position:absolute;
+	left:-100px;
+}
+.holder span {
+	background-color:#333;
+	font-size:27px;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#dedede;
+	font-weight:700;
+	padding:4px;
+	position:absolute;
+	top:120px;
+	left:4px;
+}
+.holder .text {
+	padding:20px;
+	display:none;
+	font-family:Arial, Helvetica, sans-serif;
+	line-height:26px;
+	position:absolute;
+	top:180px;
+	font-size:16px;
+	color:#fff;
+	width:340px;
+}
+.clear {
+	clear:both;
+}
+.main {
+	width:80%;
+	height:180px;
+	margin:0 auto;
+	overflow:hidden;
+}
 
 /* Footer */
 footer 
