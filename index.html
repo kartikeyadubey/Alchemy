@@ -4,11 +4,11 @@
 <head>
 	<meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
 	
-	<title>Dynamic Page | Home</title>
+	<title>Alchemy</title>
   
   <!-- Stylesheets -->  
   <link rel='stylesheet' type='text/css' href='css/style.css' />
-  <link rel='stylesheet' id='camera-css'  href='css/camera.css' type='text/css' media='all'>
+    <link rel='stylesheet' type='text/css' href='css/research_style.css' />
 	
 	<!--[if IE]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -18,57 +18,17 @@
     <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js'></script>
     <script type='text/javascript' src='js/jquery.ba-hashchange.min.js'></script>
     <script type='text/javascript' src='js/dynamicpage.js'></script>
-    <script type='text/javascript' src='js/jquery.mobile.customized.min.js'></script>
-    <script type='text/javascript' src='js/jquery.easing.1.3.js'></script> 
-    <script type='text/javascript' src='js/camera.min.js'></script>
-    <script type='text/javascript' src='js/jquery.scrollTo-min.js'></script>
-
-    <!-- Camera Plugin Script Refactoring may be needed -->
-    <script>
-		jQuery(function(){
-			
-			jQuery('#camera_wrap_1').camera({
-        thumbnails: true,
-        height: '275px',
-        fx: 'simpleFade',
-        loader: 'none',
-			});
-		});
-  </script><!-- End Camera Script -->
-  
-  <!-- Picture hover script refactoring may be needed-->
-  <script>
-    $(document).ready(function(){
-       $('.holder').hover(
-        function () {
-        $(this).removeClass('.notactive');	
-        $('.notactive').stop().animate({'width':'290px'},400); 
-            $(this).find('img').stop().animate({'top':'-165px'},400); 
-        $(this).stop().animate({'width':'380px'},400); 
-        $(this).find('span').css({'background-color':'#000'}); 
-        $(this).find('.text').fadeIn(300); 
-          },
-          function () {
-            $('.notactive').stop().animate({'width':'320px'},400); 
-            $(this).addClass('.notactive');	
-          $(this).find('.text').hide();
-                $(this).find('img').stop().animate({'top':'0px'},500); 
-            $(this).stop().animate({'width':'320px'},400);
-          $(this).find('span').css({'background-color':'#333', 'color':'#dedede'}); 
-         
-        });        
-      });
-    </script><!-- End picture script-->        
+    <script type='text/javascript' src='js/script.js'></script>
+    <script src="js/jquery.scrollTo-min.js"></script>
 </head>
 
 <body>
 
-	<div id="page-wrap">
+  <img src="images/background/background.png" class="bg">
+	<section id="page-wrap">
 
     <header>
-      <hgroup>
-      <h1>Alchemy</h1>
-      </hgroup>
+      <img src="images/header/alchemy_logo.png" alt="Research Terminal"/>
 		  <nav>
 		      <ul>
  		          <li><a href="scope.html">SCOPE</a></li>
@@ -82,28 +42,17 @@
 		
 		<section id="main-content">
       <div id="guts">
-        <div class="camera_wrap camera_azure_skin" id="camera_wrap_1">
-                <div data-thumb="images/slides/thumbs/bridge.jpg" data-src="images/slides/bridge.jpg">
-                    <div class="camera_caption fadeFromBottom">
-                        Camera is a responsive/adaptive slideshow. <em>Try to resize the browser window</em>
-                    </div>
-                </div>
-                <div data-thumb="images/slides/thumbs/leaf.jpg" data-src="images/slides/leaf.jpg">
-                    <div class="camera_caption fadeFromBottom">
-                        It uses a light version of jQuery mobile, <em>navigate the slides by swiping with your fingers</em>
-                    </div>
-                  </div>
-         </div>
-
-        <h2>Meatloaf turducken tail ribeye pork belly sirloin. Hamburger flank ham hock, tri-tip pancetta jerky ribeye capicola bresaola pork loin salami strip steak beef ribs pork belly.</h2>
+        <div class="index-content">
+          <h2>Meatloaf turducken tail ribeye pork belly sirloin. Hamburger flank ham hock, tri-tip pancetta jerky ribeye capicola bresaola pork loin salami strip steak beef ribs pork belly.</h2>
+        </div>
       </div>
 		</section>
 		
 	</div>
 	
-  <footer>
+<!--  <footer>
   Created by Alchemy
-  </footer>
+  </footer> -->
 
 </body>
 
