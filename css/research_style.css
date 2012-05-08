@@ -6,6 +6,16 @@
   position: fixed;
 }
 
+.sidebar a
+{
+  color: white;
+  text-decoration: none;
+}
+
+.sidebar a:hover
+{
+  background-color: white;
+}
 .research-content
 {
   width: 60%;
