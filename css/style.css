@@ -45,7 +45,17 @@ img.bg
 header
 {
   background: url('../images/header/header_background.png')repeat-x;
-  padding: 7px 5px 7px 25px;
+  padding: 20px 5px 20px 0px;
+}
+
+/* Header image div */
+#header-image
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 60%;
+	/*FIX THISSSSSSS*/
+	padding-right: 9%;
 }
 
 /* Make footer stick to bottom of page */
@@ -87,7 +97,7 @@ h2
 {
   color: white;
   padding-bottom: 20px;
-  font-size: 2.5em;
+  font-size: 3.5em;
 }
 
 p
@@ -106,29 +116,25 @@ p
  
 .index-content
 {
-  width: 60%;
+  width: 50%;
   margin-left:auto;
   margin-right:auto;
-
+  padding: 50px 80px 50px 80px;
 }
 
 #guts
 {
-  padding-top: 10px;
+  padding-top: 0px;
 }
 
 /* Navigation bar */
 nav
 {
   position:absolute;
-  padding: 0 5px;
-  top: 2em;
-  right:0;
-  text-align: center;
-
-opacity: 1;
-filter: alpha(opacity=100);
-  
+  padding: 0px 5px;
+  top: 3.5em;
+  right: 0;
+  text-align: center;  
 }
 
 nav ul 
